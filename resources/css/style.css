@@ -8,12 +8,13 @@
 /* command/ is a shortcut */
 
 body {
-  font-family: Helvetica;
   font-size: 16px;
   color: darkgray;
+  font-family: 'Open Sans', sans-serif;
   }
 
 header {
+  font-family: Helvetica;
   position:fixed;
   top: 0;
   background-color: white;
@@ -106,6 +107,10 @@ nav ul {
   }
 .practice {
   width: 60%;
+  display: inline-block;
+}
+.practice .photo {
+  width: 100%;
 }
 .practice .photo img {
   width: 100%;
@@ -125,10 +130,39 @@ nav ul {
   font-size: 16px;
   padding-bottom: 32px;
 }
+.infoBox {
+  padding: 16px;
+  padding-top: 32px;
+  border-bottom: 2px double lightgray;
+}
+.infoAcademy {
+  width: 35%;
+  float: right;
+  border-left: 1px solid lightgray;
 
+}
 
+.infoPhoto {
+  width: 35%;
+  display:inline-block;
+}
 
+.infoPhoto img {
+  width: 100%;
 
+}
+.info {
+  width: 65%;
+
+  float:right;
+}
+.info p {
+  padding: 6px;
+}
+.background {
+  background-color: lightgray;
+  padding: 16px;
+}
 
 
 
@@ -137,7 +171,6 @@ nav ul {
   /* check all below */
 footer {
   height: 50px;
-  position: fixed;
   width: 100%;
   bottom: 0;
   box-sizing: border-box;
