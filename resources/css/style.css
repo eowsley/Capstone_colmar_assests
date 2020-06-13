@@ -109,10 +109,10 @@ nav ul {
   width: 60%;
   display: inline-block;
 }
-.practice .photo {
+.practice .photoPrac {
   width: 100%;
 }
-.practice .photo img {
+.practice .photoPrac img {
   width: 100%;
   margin: 32px 24px;
   display:inline-block;
@@ -163,9 +163,38 @@ nav ul {
   background-color: lightgray;
   padding: 16px;
 }
+.start {
+  width: 100%;
 
+}
+h3 {
+  text-align:center;
+  padding: 32px 0;
+  font-size: 48px;
+  color: black;
+}
+.start .photos {
+  width: 80%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.start .photo img {
+  display: block;
+  width: 100%;
+}
 
+.start .photo {
+  flex-flow: row wrap;
+  width: 31%;
+  margin: 1%;
 
+}
+.photo .topics {
+    padding:16px;
+}
+.photo
 
 
   /* check all below */
