@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+
+/* command/ is a shortcut */
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: darkgray;
+  }
+
+header {
+  position:fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 98px;
+  padding-bottom: 24px;
+  z-index: 1000;
+
+  }
+div .logo {
+    margin: 24px;
+
+}
+.logo a {
+  float:left;
+}
+.logo img {
+  height: 85px;
+  padding-top: 20px;
+  padding-left: 10px;
+
+}
+
+h2 {
+  display: inline;
+  position: absolute;
+  font-size: 30px;
+  top: 35px;
+}
+nav {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  margin-right: 12px;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  color:gray;
+  padding-right: 16px;
+}
+nav li a:hover {
+  color:blue;
+}
+nav ul {
+  float: right;
+}
+
+.learn {
+  background-color: lightgray;
+  margin-top: 64px;
+  padding-top: 32px;
+  position: relative;
+}
+.learn .photo {
+  margin: 32px 24px;
+  width: 60%;
+  display:inline-block;
+}
+.learn img{
+  width: 100%;
+}
+.infoCta {
+  width: 30%;
+  float:right;
+  position: absolute;
+  top: 28%;
+  right: 4%;
+
+}
+.learn h1, .learn p {
+  color: black;
+  padding: 20px;
+  }
+  .learn h1 {
+    font-size: 40px;
+  }
+  .learn p {
+    font-size: 25px;
+    /* check font family */
+  }
+  .learn button {
+    width: 78%;
+    background-color: darkgray;
+    color: white;
+    font-size: 24px;
+    margin: 24px;
+    padding: 8px;
+  }
+.practice {
+  width: 60%;
+}
+.practice .photo img {
+  width: 100%;
+  margin: 32px 24px;
+  display:inline-block;
+}
+.practice h1, .practice p {
+  color: black;
+  margin-left: 24px;
+
+}
+.practice h1 {
+  font-size: 40px;
+  padding-bottom: 24px;
+}
+.practice p {
+  font-size: 16px;
+  padding-bottom: 32px;
+}
+
+
+
+
+
+
+
+
+
+  /* check all below */
+footer {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+i {
+  text-align:right;
+  color: gray;
+}
