@@ -17,13 +17,17 @@ header {
   font-family: Helvetica;
   position:fixed;
   top: 0;
-  background-color: white;
+  -color: white;
   width: 100%;
   height: 98px;
   padding-bottom: 24px;
   z-index: 1000;
-
   }
+
+  header .mobileView {
+    display: none;
+  }
+
 div .logo {
     margin: 24px;
 
@@ -44,23 +48,23 @@ h2 {
   font-size: 30px;
   top: 35px;
 }
-nav {
+.laptopView {
   position: absolute;
   top: 45px;
   right: 0;
   margin-right: 12px;
 }
-nav li {
+.laptopView li {
   display: inline-block;
 }
-nav li a {
+.laptopView  li a {
   color:gray;
   padding-right: 16px;
 }
-nav li a:hover {
+.laptopView li a:hover {
   color:blue;
 }
-nav ul {
+.laptopView ul {
   float: right;
 }
 
@@ -132,7 +136,6 @@ nav ul {
 }
 .infoBox {
   padding: 16px;
-  padding-top: 32px;
   border-bottom: 2px double lightgray;
 }
 .infoAcademy {
@@ -143,7 +146,7 @@ nav ul {
 }
 
 .infoPhoto {
-  width: 35%;
+  width: 46%;
   display:inline-block;
 }
 
@@ -152,7 +155,7 @@ nav ul {
 
 }
 .info {
-  width: 65%;
+  width: 52%;
 
   float:right;
 }
@@ -194,7 +197,9 @@ h3 {
 .photo .topics {
     padding:16px;
 }
-.photo
+video {
+  padding: 24px;
+}
 
 
   /* check all below */
@@ -204,8 +209,124 @@ footer {
   bottom: 0;
   box-sizing: border-box;
   padding: 10px;
+  padding-bottom: 36px;
+  border-top: 1px solid lightgray;
 }
 i {
   text-align:right;
   color: gray;
 }
+footer div {
+  float: right;
+}
+footer p {
+  float: left;
+
+}
+footer a {
+  padding-right: 8px;
+  color: darkgray;
+}
+
+@media only screen and (max-width: 600px){
+header .logo, .laptopView {
+  display: none;
+}
+header .mobileView {
+  display:inline-block;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+
+}
+.mobileView li {
+  display: inline;
+  padding:  20px;
+}
+.mobileView img {
+    width: 42px;
+}
+.mobileView ul {
+text-align: center;
+width: 100%;
+
+}
+header {
+  padding-bottom: 0;
+  height: auto;
+}
+.learn .photo {
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+.learn {
+  background-color: lightgray;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+}
+.infoCta {
+  width: 100%;
+  float:right;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: lightgray;
+}
+section .practice {
+  display: none;
+}
+.infoAcademy {
+  width: 95%;
+  float: right;
+  border-left: 0;
+  margin-top: 100%;
+
+}
+
+.infoPhoto {
+  width: 100%;
+
+  display:inline-block;
+}
+.infoPhoto img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+
+}
+.info {
+  width: 100%;
+  float:right;
+  display: block;
+}
+.info p {
+  padding: 6px;
+}
+.background {
+  background-color: white;
+  padding: 16px;
+}
+.infoBox {
+  padding: 16px;
+  border-bottom: 0;
+}
+.start .photo img, .start .photo .courses {
+  display: none
+
+}
+.start .photo {
+  flex-flow: row wrap;
+  width: 95%;
+  margin: 1%;
+  padding-left: 0;
+
+}
+.photo .topics {
+    padding:16px;
+    padding-left: 0;
+    
+}
+
+  }

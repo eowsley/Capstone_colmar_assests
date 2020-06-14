@@ -3,6 +3,8 @@
 <head>
   <title>eli colmar</title>
 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+
   <!-- Add a new Font Family Google -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -26,12 +28,22 @@
       </a>
     </div>
 
-        <nav>
-          <ul>
+        <nav class="laptopView">
+          <ul >
             <li><a href="#">On Campus</a></li>
             <li><a href="#">Online</a></li>
             <li><a href="#">For companies</a></li>
             <li><a href="#">Sign in</a></li>
+          </ul>
+        </nav>
+
+
+        <nav class="mobileView">
+          <ul>
+            <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="Logo"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Campus"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg" alt="Online"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg" alt="Login"></a></li>
           </ul>
         </nav>
 
@@ -66,7 +78,7 @@
         </article>
 
       <article class="infoAcademy">
-          <div class="infoBox">
+          <div class="infoBox" style="padding-top: 32px;">
               <div class="infoPhoto">
             <img src="./resources/images/information-orientation.jpg" alt="Students walking">
               </div>
@@ -117,9 +129,13 @@
             <img src="./resources/images/course-software.jpg" alt="Computer">
           <div class="topics">
             <p style="font-size: 24px; font-weight: bold; color: black;">Software engineering</p>
+              <div class="courses">
+
+
             <p style="font-size: 18px;">COURSES</p>
             <p style="font-size: 18px;">Web Development, Mobile Development, iOT, API's
             </p>
+            </div>
           </div>
           </div>
 
@@ -127,9 +143,12 @@
             <img src="./resources/images/course-computer-art.jpg" alt="Mobile">
           <div class="topics">
             <p style="font-size: 24px; font-weight: bold; color: black;">Computer art</p>
+            <div class="courses">
+
             <p style="font-size: 18px;">COURSES</p>
             <p style="font-size: 18px;">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
             </p>
+            </div>
           </div>
           </div>
 
@@ -137,9 +156,12 @@
             <img src="./resources/images/course-design.jpg" alt="Student with camera">
           <div class="topics">
             <p style="font-size: 24px; font-weight: bold; color: black;">Design</p>
+            <div class="courses">
+
             <p style="font-size: 18px;">COURSES</p>
             <p style="font-size: 18px;">User Experience Design, User Research, Visual Design
             </p>
+            </div>
             </div>
             </div>
 
@@ -147,9 +169,12 @@
             <img src="./resources/images/course-data.jpg" alt="Laptop">
           <div class="topics">
             <p style="font-size: 24px;font-weight: bold; color: black;">Data</p>
+            <div class="courses">
+
             <p style="font-size: 18px;">COURSES</p>
             <p style="font-size: 18px;">Data Science, Big Data, SQL, Data Visualization
             </p>
+            </div>
           </div>
           </div>
 
@@ -157,9 +182,12 @@
             <img src="./resources/images/course-business.jpg" alt="Chess game">
           <div class="topics">
             <p style="font-size: 24px;font-weight: bold; color: black;">Business</p>
+            <div class="courses">
+
             <p style="font-size: 18px;">COURSES</p>
             <p style="font-size: 18px;">Product Development, Business Development, Startup
             </p>
+            </div>
           </div>
           </div>
 
@@ -167,9 +195,11 @@
             <img src="./resources/images/course-marketing.jpg" alt="Apple watch">
           <div class="topics">
             <p style="font-size: 24px;font-weight: bold; color: black;">Design</p>
+            <div class="courses">
             <p style="font-size: 18px;">COURSES</p>
             <p style="font-size: 18px;">Analytics, Content Marketing, Mobile Marketing
             </p>
+            </div>
           </div>
           </div>
 
@@ -177,45 +207,43 @@
       </section>
 
   <!-- Section 4 -->
+
       <section>
           <h3>Thesis Exhibit</h3>
         <article class="practice">
-          <div class="photoPrac">
-            <video src="./resources/videos/thesis.mp4">
 
+          <div class="photoPrac">
+            <video src="./resources/videos/thesis.mp4" autoplay loop width="100%" height="auto">
             </video>
           </div>
+
           <div class="infoPrac">
-            <h1>It doesn't hurt to keep practicing</h1>
+            <h1>Reimagine urban</h1>
             <p style="letter-spacing: 1px; font-weight: lighter;">"Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vehicula fermentum ex a finibus. In in nulla nec justo imperdiet iaculis. Praesent laoreet risus quis viverra bibendum. Nullam a gravida libero, id gravida lorem."</p>
-            <p style="font-size: 12px;">Emanuel, Sr Strategist at <a href="#">Hiring.com</a>
-            </p>
           </div>
         </article>
 
-      <article class="infoAcademy">
-          <div class="infoBox">
+      <article class="infoAcademy" style="border: 0px;">
+          <div class="background">
               <div class="infoPhoto">
-            <img src="./resources/images/information-orientation.jpg" alt="Students walking">
+            <img src="./resources/images/thesis-fisma.jpg" alt="Desktop">
               </div>
 
               <div class="info">
-                <p style="font-size: 24px; font-weight: bold; color: black;">Orientation date</p>
-                <p style="font-size: 18px;">Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                <p style="font-size: 18px;"> <a href="#">Read more</a>
+                <p style="font-size: 24px; font-weight: bold; color: black;">Fisma: Design and Prototype</p>
+                <p style="font-size: 18px;">Designer showcase of new prototype product</p>
                 </p>
               </div>
           </div>
 
-          <div class="infoBox">
+          <div class="infoBox" style="border: 0px;">
             <div class="infoPhoto">
-              <img src="./resources/images/information-campus.jpg" alt="Students studying">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="NYC">
             </div>
 
             <div class="info">
-              <p style="font-size: 24px; font-weight: bold; color: black;">Our Campus</p>
-              <p style="font-size: 18px;">Find which campus is close by you</p>
-              <p style="font-size: 18px;"> <a href="#">Read more</a>
+              <p style="font-size: 24px; font-weight: bold; color: black;">Now and then</p>
+              <p style="font-size: 18px;">Research study about New York</p>
               </p>
             </div>
           </div>
@@ -231,8 +259,10 @@
 <!-- Footer -->
   <footer>
       <p><i class="fa fa-copyright"></i>2016 Colmar Academy. All rights reserved</p>
+    <div>
       <a href="#">Terms</a>
       <a href="#">Privacy</a>
+    </div>
   </footer>
 
 </body>
