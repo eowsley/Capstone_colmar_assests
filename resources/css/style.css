@@ -3,170 +3,230 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family:sans-serif;
+  list-style-type: none;
   }
 
 /* command/ is a shortcut */
 
 body {
   font-size: 16px;
-  color: darkgray;
+  color: black;
   font-family: 'Open Sans', sans-serif;
   }
-
 header {
-  font-family: Helvetica;
-  position:fixed;
-  top: 0;
-  -color: white;
-  width: 100%;
-  height: 98px;
-  padding-bottom: 24px;
-  z-index: 1000;
-  }
-
-  header .mobileView {
-    display: none;
-  }
-
-div .logo {
-    margin: 24px;
-
+  height: 64px;
+  padding: 0 16px 0 24px;
+    }
+header .desktop {
+  display:flex;
+  justify-content: space-between;
+  height: 100%;
 }
-.logo a {
-  float:left;
+header .desktop .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo img {
-  height: 85px;
-  padding-top: 20px;
-  padding-left: 10px;
-
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 400;
 }
-
-h2 {
-  display: inline;
-  position: absolute;
-  font-size: 30px;
-  top: 35px;
+h1 span:first-child {
+  color: #4A4A4A;
 }
-.laptopView {
-  position: absolute;
-  top: 45px;
-  right: 0;
-  margin-right: 12px;
+h1 span:last-child {
+  color: #9B9B9B;
 }
-.laptopView li {
-  display: inline-block;
+header .mobile {
+  display:none;
 }
-.laptopView  li a {
+header nav li a {
   color:gray;
   padding-right: 16px;
 }
-.laptopView li a:hover {
-  color:blue;
+header nav ul li {
+  padding: 0;
 }
-.laptopView ul {
-  float: right;
+header .desktop ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.learn {
+@media only screen and (max-width: 600px){
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    align-items: center; 
+  }
+  header {
+    height: 64px;
+    padding: 0;
+    display: flex;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+/*  Main Section 1 Hero  */
+
+.hero-section {
   background-color: lightgray;
-  margin-top: 64px;
-  padding-top: 32px;
-  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.learn .photo {
-  margin: 32px 24px;
+.hero-section .image-container {
   width: 60%;
-  display:inline-block;
+  padding: 32px 24px;
 }
-.learn img{
+.hero-section p {
+  width: 80%;
+}
+.image-container img {
   width: 100%;
 }
-.infoCta {
+.content-container {
   width: 30%;
-  float:right;
-  position: absolute;
-  top: 28%;
-  right: 4%;
-
 }
-.learn h1, .learn p {
-  color: black;
-  padding: 20px;
-  }
-  .learn h1 {
-    font-size: 40px;
-  }
-  .learn p {
-    font-size: 25px;
-    /* check font family */
-  }
-  .learn button {
-    width: 78%;
-    background-color: darkgray;
-    color: white;
-    font-size: 24px;
-    margin: 24px;
-    padding: 8px;
-  }
-.practice {
-  width: 60%;
-  display: inline-block;
-}
-.practice .photoPrac {
-  width: 100%;
-}
-.practice .photoPrac img {
-  width: 100%;
-  margin: 32px 24px;
-  display:inline-block;
-}
-.practice h1, .practice p {
-  color: black;
-  margin-left: 24px;
-
-}
-.practice h1 {
+.content-container h2 {
   font-size: 40px;
-  padding-bottom: 24px;
 }
-.practice p {
-  font-size: 16px;
-  padding-bottom: 32px;
+.content-container p {
+  font-size: 20px;
+  padding: 30px 0;
 }
-.infoBox {
-  padding: 16px;
-  border-bottom: 2px double lightgray;
+button {
+background-color: darkgray;
+padding: 8px 15px;
+color: white;
+font-size: 24px;
+width: 80%;
+border: none;
 }
-.infoAcademy {
-  width: 35%;
-  float: right;
-  border-left: 1px solid lightgray;
+@media only screen and (max-width: 600px){
+  .hero-section .image-container {
+    width: 100%;
+    padding: 0;
+  }
+  .hero-section .content-container {
+    width: 100%;
+    padding: 32px 16px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .hero-section button {
+    width: 100%;
+  }
+  }
 
-}
+  /*  Main Section 2  */
 
+  .second-section {
+    width: 100%;
+    display: flex;
+  }
+  .article-1 {
+    width: 60%;
+  }
+  .article-1 .image-container2 {
+    width: 100%;
+    padding: 32px 24px;
+  }
+  .article-1 .image-container2 img {
+    width: 100%;   
+  }
+  .article-1  h1, .article-1  p {
+    color: black;
+    margin-left: 24px;
+  }
+  .article-1 h1 {
+    font-size: 40px;
+    padding-bottom: 24px;
+  }
+  .article-1  p {
+    font-size: 16px;
+    padding-bottom: 32px;
+  }
+  .infoBox {
+    padding: 16px;
+    border-bottom: 2px double lightgray;
+  }
+  .content-container3 {
+    width: 40%;
+    border-left: 1px solid lightgray;
+  }
+  .infoBox, .content-container4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .infoPhoto {
+    width: 35%;
+    
+  }
+  .infoPhoto img {
+    width: 100%;
+  }
+  .info {
+    width: 55%;    
+  }
+  .info p {
+    padding: 6px;
+  }
+  .content-container4 {
+    background-color: lightgray;
+    padding: 16px;
+  }
+
+
+@media only screen and (max-width: 600px){
+.second-section .desktop {
+    display: none;
+}
+.content-container3 {
+    width:100%;
+}
 .infoPhoto {
-  width: 46%;
-  display:inline-block;
+    width: 100%;
+    padding: 16px;
 }
-
-.infoPhoto img {
+.infophoto img {
+  object-fit: cover;
   width: 100%;
-
+  height: 200px;
 }
 .info {
-  width: 52%;
+    width: 100%; 
+    padding: 32px;   
+}
+.infoBox {
+  border: none;
+}
+.content-container4 {
+  background-color: transparent;
+}
+}
 
-  float:right;
-}
-.info p {
-  padding: 6px;
-}
-.background {
-  background-color: lightgray;
-  padding: 16px;
-}
-.start {
+ /*  Main Section 3 */
+
+ 
+.third-section {
   width: 100%;
 
 }
@@ -176,19 +236,19 @@ h3 {
   font-size: 48px;
   color: black;
 }
-.start .photos {
+.third-section  .photos {
   width: 80%;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   margin: auto;
 }
-.start .photo img {
+.third-section  .photo img {
   display: block;
   width: 100%;
 }
 
-.start .photo {
+.third-section .photo {
   flex-flow: row wrap;
   width: 31%;
   margin: 1%;
@@ -197,13 +257,10 @@ h3 {
 .photo .topics {
     padding:16px;
 }
-video {
-  padding: 24px;
-}
 
+ /*  Footer  */
 
-  /* check all below */
-footer {
+ footer {
   height: 50px;
   width: 100%;
   bottom: 0;
@@ -227,106 +284,55 @@ footer a {
   padding-right: 8px;
   color: darkgray;
 }
-
+ 
 @media only screen and (max-width: 600px){
-header .logo, .laptopView {
-  display: none;
-}
-header .mobileView {
-  display:inline-block;
-  width: 100%;
-  margin: auto;
-  background-color: white;
-
-}
-.mobileView li {
-  display: inline;
-  padding:  20px;
-}
-.mobileView img {
-    width: 42px;
-}
-.mobileView ul {
-text-align: center;
-width: 100%;
-
-}
-header {
-  padding-bottom: 0;
-  height: auto;
-}
-.learn .photo {
-  margin: 0;
-  width: 100%;
-  display: block;
-}
-.learn {
-  background-color: lightgray;
-  margin-top: 0;
-  padding-top: 0;
-  position: relative;
-}
-.infoCta {
-  width: 100%;
-  float:right;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: lightgray;
-}
-section .practice {
-  display: none;
-}
-.infoAcademy {
-  width: 95%;
-  float: right;
-  border-left: 0;
-  margin-top: 100%;
-
-}
-
-.infoPhoto {
-  width: 100%;
-
-  display:inline-block;
-}
-.infoPhoto img {
-  width: 100%;
-  height: 80px;
-  object-fit: cover;
-
-}
-.info {
-  width: 100%;
-  float:right;
-  display: block;
-}
-.info p {
-  padding: 6px;
-}
-.background {
-  background-color: white;
-  padding: 16px;
-}
-.infoBox {
-  padding: 16px;
-  border-bottom: 0;
-}
-.start .photo img, .start .photo .courses {
-  display: none
-
-}
-.start .photo {
-  flex-flow: row wrap;
-  width: 95%;
-  margin: 1%;
-  padding-left: 0;
-
-}
-.photo .topics {
-    padding:16px;
-    padding-left: 0;
-    
-}
-
+  
+  .third-section  .photo img, .third-section  .photo .courses {
+    display: none
   }
+  .third-section  .photo {
+    flex-flow: row wrap;
+    width: 95%;
+    margin: 1%;
+    padding-left: 0;
+  
+  }
+  .photo .topics {
+      padding:16px;
+      padding-left: 0;
+  }
+  
+  .topics {
+    background-color: lightgray;
+  }
+  .topics p {
+      padding: 16px;
+  }
+  .noDisplay {
+    display: none;
+  }
+  video {
+    width: 100%;
+    padding: 0;
+  }
+  .image-container2 {
+    width: 100%;
+  }
+  .fourth-section  .article-1 {
+    width: 100%;
+    padding: 0;
+  }
+  .fourth-section .article-1 .image-container2 {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  footer {
+    border-top: none;
+  }
+  
+  }
+  
+
+
+
+    
