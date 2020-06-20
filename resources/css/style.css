@@ -257,6 +257,13 @@ h3 {
 .photo .topics {
     padding:16px;
 }
+.image-container2 video {
+  width: 100%;
+  padding: 0;
+}
+video {
+  object-fit: contain;
+}
 
  /*  Footer  */
 
